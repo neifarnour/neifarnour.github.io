@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nour Neifar - Personal Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 0px;
+            padding: 2rem;
+        }
+        .header {
+            background: #ffffff;
+            color: #f8f8f8;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .bio-section {
+            flex: 2;
+            padding-right: 2rem;
+        }
+        .photo-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            background: #e9ecef;
+        }
+        .papers-section {
+            margin-top: 2rem;
+        }
+        .paper-item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+        .paper-figure {
+            flex: 1;
+            max-width: 180px;
+            margin-right: 1.5rem;
+        }
+        .paper-figure img {
+            width: 100%;
+            border-radius: 8px;
+            background: #e9ecef;
+        }
+        .paper-desc {
+            flex: 3;
+        }
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        @media (max-width: 700px) {
+            .main-content, .papers-section {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .main-content {
+                align-items: center;
+            }
+            .bio-section {
+                padding-right: 0;
+                margin-bottom: 1.5rem;
+            }
+            .paper-item {
+                flex-direction: column;
+            }
+            .paper-figure {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="bio-section">
+                <h1>Nour Neifar</h1>
+                <h2>About Me</h2>
+                <p>
+                    Hi everyone! I am currently a postdoctoral researcher at the Digital Research Center of Sfax (<a href="https://crns.rnrt.tn" target="_blank" style="color: #0073e6; font-weight: bold; text-decoration: none;">CRNS</a>) in Tunisia, working with the SmartVision team, which focuses primarily on computer vision and deep learning projects. I earned my PhD in Computer Science in 2024 from the National School of Engineers of Sfax (<a href="https://enis.rnu.tn/" target="_blank" style="color: #0073e6; font-weight: bold; text-decoration: none;">ENIS</a>).
+                <p>
+                    My research interests include artificial intelligence, machine learning, and deep learning, with a particular focus on generative models and their applications. I am also interested in exploring innovative approaches for processing and analyzing complex data, including biomedical signals, images, and other forms of multimodal information. Beyond technical development, I aim to contribute to AI methods that are efficient, interpretable, and impactful across various real-world domains.                </p>
+                <div style="margin-top: 1rem;">
+                    <a href="mailto:nour.neifar@gmail.com" style="margin-right: 1.2rem; text-decoration: none; color: #0073e6; font-weight: bold;">
+                        Email
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=QBJkwFgAAAAJ&hl=fr&oi=ao" target="_blank" style="text-decoration: none; color: #0073e6; font-weight: bold;">
+                        Google Scholar
+                    </a>
+                </div>
+            </div>
+            <div class="photo-section">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <img src="me.JPG" alt="Nour Neifar Photo" class="profile-photo" style="display: block; max-width: 150%; max-height: 220px; width: auto; height: auto; object-fit: cover;  background: #e9ecef;">
+                </div>
+            </div>
+        </div>
+        <div class="papers-section">
+            <h2>Reaseach Papers</h2>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="implicit.png" alt="Paper 1 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">Implicit Neural Representations for ECG Synthesis: What is the Potential ?</div>
+                    <div>
+                        <strong>Nour Neifar</strong>, Achraf Ben-Hamadou
+                        <br>
+                        <em>ACS/IEEE 22nd International Conference on Computer Systems and Applications, 2025
+                        </em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://example.com/diffecg-paper" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="slr.png" alt="Paper 2 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">Deep Generative Models for Physiological Signals: A Systematic Literature Review</div>
+                    <div>
+                        <strong>Nour Neifar</strong>,  Afef Mdhaffar, Achraf Ben-Hamadou, Mohamed Jmaiel
+                        <br>
+                        <em>Elsevier Artificial Intelligence in Medicine, 2025
+                        </em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0933365725000624" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="dist.png" alt="Paper 3 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">Knowledge Distillation: A Key Approach for Lightweight Deep Generative Models</div>
+                    <div>
+                        <strong>Nour Neifar</strong>.<br>
+                        <em>International Conference on Service-Oriented Computing, 2024	</em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://link.springer.com/chapter/10.1007/978-981-96-7238-7_22" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="diff.png" alt="Paper 4 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">Diffecg: A versatile probabilistic diffusion model for ecg signals synthesis</div>
+                    <div>
+                        <strong>Nour Neifar</strong>, Achraf Ben-Hamadou, Afef Mdhaffar, Mohamed Jmaiel<br>
+                        <em>2024 IEEE/ACIS 22nd International Conference on Software Engineering Research, Management and Applications (SERA)</em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10685651" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="gan2.png" alt="Paper 5 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">
+                      
+                        Leveraging statistical shape priors in GAN-based ECG synthesis</div>
+                    <div>
+                        <strong>Nour Neifar</strong>, Achraf Ben-Hamadou, Afef Mdhaffar, Mohamed Jmaiel, Bernd Freisleben<br>
+                                                <em>IEEE Access, 2024
+                                                </em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10459195" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="comparative.png" alt="Paper 7 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">A Comparative Study of GAN Methods for Physiological Signal Generation</div>
+                    <div>
+                        <strong>Nour Neifar</strong>, Achraf Ben-Hamadou, Afef Mdhaffar, Mohamed Jmaiel, Bernd Freisleben<br>
+                        <em>ICPRAM, 2023</em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.scitepress.org/Papers/2023/117942/117942.pdf" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-figure">
+                    <img src="gan1.png" alt="Paper 8 Figure">
+                </div>
+                <div class="paper-desc">
+                    <div class="paper-title">Disentangling temporal and amplitude variations in ECG synthesis using anchored GANs</div>
+                    <div>
+                        <strong>Nour Neifar</strong>, Achraf Ben-Hamadou, Afef Mdhaffar, Mohamed Jmaiel, Bernd Freisleben<br>
+                        <em>Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing, 2023
+                        </em><br>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3477314.3507300" target="_blank">
+                            <img src="link.png" alt="PDF" style="width:24px;height:24px;vertical-align:middle;"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
